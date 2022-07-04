@@ -5,6 +5,7 @@
     color: white;
     gap:100px;
     width: 100%;
+    flex: 1;
 }
 .profil_resume{
     display: flex;
@@ -63,4 +64,66 @@
   
   .btn:active {
     transform: translateY(4px);
+  }
+  @media screen and (max-width: 1110px){
+    .profil_container{
+        gap:20x;
+    }
+    .profil_resume{
+      margin-left:20px;
+        
+    }
+    .profil_picture{
+        margin-right:20px;
+    }
+    h1{
+        font-size:26px;
+    }
+    h2{
+       font-size:18px;
+    }
+    p{
+       font-size:16px;  
+    } 
+  }
+  @media screen and (max-width: 768px){
+    .profil_container{
+        flex-direction: column;
+        gap:10px;
+    }
+    .profil_picture_border img{
+        width: 180px;
+        height:180px;
+        border-radius: 50%;
+        
+    }
+    .btn {
+        width: 114px;
+      }
+     h1{
+         font-size:24px;
+     }
+     h2{
+        font-size:18px;
+     }
+     p{
+        font-size:14px;  
+     } 
+     .profil_social_media{
+        margin-top: 18px;
+    }
+    .profil_btn{
+        margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 320px){
+    h1{
+        font-size:20px;
+    }
+    h2{
+       font-size:16px;
+    }
+    p{
+       font-size:12px;  
+    } 
   }
