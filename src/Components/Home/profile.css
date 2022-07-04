@@ -1,0 +1,66 @@
+.profil_container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap:100px;
+    width: 100%;
+}
+.profil_resume{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.profil_animation{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profil_btn{
+    display:flex;
+    margin-top: 40px;
+    gap:20px;
+}
+.profil_picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profil_picture_border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.profil_picture_border img{
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    
+}
+.profil_social_media{
+    margin-top: 40px;
+    display: flex;
+    gap:20px;
+}
+.btn {
+    border-radius: 50px;
+    padding: 14px 0;
+    width: 160px;
+    cursor: pointer;
+    transition: 0.2s;
+    border:none;
+    background-color:#FF5733;
+    color:white;
+  }
+  .btn a{
+    color:white;
+    text-decoration: none;  
+  }
+  
+  .btn:active {
+    transform: translateY(4px);
+  }

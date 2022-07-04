@@ -1,0 +1,6 @@
+.home_container{
+    background-image: url('../../Assets/Background/bg.jpg');
+    height: 80vh;
+    display:flex;
+    
+}
