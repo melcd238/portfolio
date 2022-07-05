@@ -27,6 +27,7 @@ header{
     font-size: 20px;
     cursor: pointer;
     font-weight: bolder;
+    margin-left: 20px;
 }
 .header-hamburger{
     display:none;
