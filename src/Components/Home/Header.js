@@ -3,6 +3,7 @@ import { FaBars } from 'react-icons/fa'
 import { TOTAL_SCREENS, GET_SCREEN_INDEX } from '../../Utils/Tools'
 import ScrollService from '../../Utils/ScrollService'
 import { useState } from "react"
+import logo from '../../Assets/logoP.png'
 
 
 const Header = ()=>{
@@ -18,6 +19,9 @@ const Header = ()=>{
 
     let currentScreenSubscription = ScrollService.currentScreenBroadCaster.subscribe(updateCurrentscreen)
 
+   
+
+
     const getHeaderOptions = ()=>{
         return(
             TOTAL_SCREENS.map((screen, i)=>(
@@ -27,15 +31,17 @@ const Header = ()=>{
             ))
         )
     }
+
     const getHeaderOptionsClass =(index)=>{
-        let classes = "header-option";
+        let classes = "header-option ";
         if(index < TOTAL_SCREENS.length - 1) 
         classes += "selected-header-seperator";
 
         if(selectedScreen === index) classes += "selected-header-option";
-        return
+        return classes;
 
     }
+
     const switchScreen = (index, screen)=>{
         let screenComponent = document.getElementById(screen.screen_name)
         if(!screenComponent)return;
@@ -54,7 +60,7 @@ const Header = ()=>{
                      <FaBars className="header-hamburger-bars"/>
                 </div>
                 <div className="header-logo">
-                     <span>MelPortfolio</span>
+                    <img src={logo} alt="logo"></img>
                 </div>
                 <div className={(showHeaderOptions) ? "header-options show-hamburger-options" : "header-options"}>{getHeaderOptions()}</div>
              </div>

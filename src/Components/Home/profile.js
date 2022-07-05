@@ -7,7 +7,7 @@ const Profil = ()=>{
     return(
         <div className="profil_container">
             <div className="profil_resume">
-                <h1>👋 Je suis Mélaïna Donati 👋 </h1>
+                <h1>👋 Je suis <span>Mélaïna Donati</span> 👋 </h1>
                <div className='profil_animation'>
                 <TypeAnimation
                      cursor={false}

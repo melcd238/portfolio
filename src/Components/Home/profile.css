@@ -54,7 +54,7 @@
     cursor: pointer;
     transition: 0.2s;
     border:none;
-    background-color:#FF5733;
+    background-color:#90028D;
     color:white;
   }
   .btn a{
@@ -64,6 +64,9 @@
   
   .btn:active {
     transform: translateY(4px);
+  }
+  h1 span{
+      color:#90028D;
   }
   @media screen and (max-width: 1110px){
     .profil_container{

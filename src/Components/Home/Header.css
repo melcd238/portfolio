@@ -16,16 +16,15 @@ header{
     width:70%;
     color: white;
 }
-.header-logo{
- font-size: 50px;
- color: white;
+.header-logo img{
+ width: 180px;
 }
 .header-options{
     display:flex;
     align-items:center;
 }
 .header-option{
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     font-weight: bolder;
 }
@@ -33,9 +32,62 @@ header{
     display:none;
     color:white;
 }
-@media screen and (max-width: 768px){
+.header-option-seperator {
+    margin: 0 50px 0 0;
+    color: white;
+  }
+  .selected-header-option {
+    color: #90028D;
+  }
+@media screen and (max-width: 970px){
     header{
         margin-top:20px;
         margin-bottom: 40px;
     }
+    .header-parent{
+      
+        width:80%;
+        
+    }
+    .header-hamburger {
+        display: block;
+      }
+      .header-parent {
+        width: 100%;
+        padding: 0 40px;
+        position: relative;
+      }
+      .header-options {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: -100%;
+        transition: all 0.8s ease-out;
+        top: 0px;
+        height: 100vh;
+        width: 100%;
+        justify-content: space-around;
+        background-color: #1f2235;
+        z-index: 1000;
+        opacity: 0.3;
+      }
+      .header-option-seperator {
+        margin: 0;
+      }
+      .selected-header-option {
+        color: white;
+      }
+      .header-hamburger-bars {
+        font-size: 36px;
+        cursor: pointer;
+        margin: 0px 10px;
+        color: white;
+      }
+      .show-hamburger-options {
+        left: 0;
+        opacity: 1;
+      }
+      .header-logo img{
+        width: 140px;
+       }
 }
