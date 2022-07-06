@@ -1,4 +1,5 @@
 import "./AboutMe.css";
+import { useEffect } from "react";
 import ScreenTitle from '../../Components/ScreenTitle/ScreenTitle';
 import ScrollService from '../../Utils/ScrollService';
 import Animations from '../../Utils/Animations';
@@ -14,6 +15,12 @@ const AboutMe= ({id})=>{
     }
 
     const fadeInSub = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
+
+    useEffect(() => {
+        return () => {
+          fadeInSub.unsubscribe();
+        };
+      }, [fadeInSub]);
 
     return(
         <div className="about-me-container screen-container" id={id || ""}>
