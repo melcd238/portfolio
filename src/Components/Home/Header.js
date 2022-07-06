@@ -1,4 +1,5 @@
 import "./Header.css"
+import { useEffect } from "react"
 import { FaBars } from 'react-icons/fa'
 import { TOTAL_SCREENS, GET_SCREEN_INDEX } from '../../Utils/Tools'
 import ScrollService from '../../Utils/ScrollService'
@@ -50,6 +51,12 @@ const Header = ()=>{
         setShowHeaderOptions(false);
 
     }
+
+    useEffect(() => {
+        return () => {
+          currentScreenSubscription.unsubscribe();
+        };
+      }, [currentScreenSubscription]);
 
 
     return(
