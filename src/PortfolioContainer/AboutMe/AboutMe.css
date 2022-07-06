@@ -1,0 +1,59 @@
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 60px 0;
+    height: 100vh;
+    
+  }
+  .about-me-parent {
+    max-width: 1000px;
+    width: 70%;
+  }
+  .about-me-card {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0px 20px -2px #1f2235;
+    border-radius:5px;
+    margin: 80px 0;
+    padding:40px;
+  }
+  .about-me-profile {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me-profile img {
+    width: 80%;
+  }
+  .about-me-details {
+    width: 48%;
+    text-align: justify;
+    padding: 30px;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-me-trait{
+      width: 80%;
+      height:2px;
+      background-color: #90028D;
+      margin: 40px;
+  }
+  @media screen and (max-width: 970px){
+    .about-me-card{
+        flex-direction: column; 
+    }
+    .about-me-parent {
+        width: 80%;
+    }
+    .about-me-profile {
+        width: 100%;
+    }
+    .about-me-details {
+        width: 100%;
+    }
+  }
