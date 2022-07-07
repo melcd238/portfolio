@@ -1,0 +1,17 @@
+.carousel{
+    width: 60%;
+    height:60vh;
+    background-color: white;
+    border-radius:5px;
+    box-shadow: 0 0px 14px -2px  #90028D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    overflow: hidden;
+    cursor: grab;
+}
+.inner-carousel{
+    display: flex;
+    gap:40px;
+}
