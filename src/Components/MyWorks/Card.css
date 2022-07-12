@@ -39,4 +39,26 @@
     color: #1f2235;
     font-family: "Poppins Bold";
 }
+.card-desc p{
+    font-size: 14px;
+    color: #1f2235;
+    font-family: "Poppins Bold";
+}
+.card-techno{
+    display:flex;
+    gap:10px;
+}
+.card-lien{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.card-lien :last-child{
+    text-decoration: underline  #90028D;
+    font-size: 14px;
+    color: #1f2235;
+}
+.card-lien a{
+    cursor:pointer;
+}
 
