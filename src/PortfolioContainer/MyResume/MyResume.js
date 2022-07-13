@@ -69,8 +69,8 @@ const MyResume = ({id})=>{
             <div className="experience-description">
               <span className="resume-description-text">
               Réalisation d'application web et optimisation des interfaces.
-              Tester le bon fonctionnement de l’application et corriger le code quand c’est nécessaire.
-              Assurer le support technique  et produire une documentation technique et fonctionnelle.
+              Tester et corriger le code si c’est nécessaire.
+              Produire une documentation technique et fonctionnelle.
               </span>
               <br />
             </div>
@@ -85,14 +85,9 @@ const MyResume = ({id})=>{
             <div className="experience-description">
               <span className="resume-description-text">
               Traitement, prise en charge et soin de patients.
+              Encadrement et accompagnement du personnel, animation des
+              réunions de travail, répartition des missions.
               </span>
-            </div>
-            <div className="experience-description">
-              <span className="resume-description-text">
-              Encadrement et accompagnement du personnel (2 salariés), animation des
-              réunions de travail, répartition des missions et  veille au bien-être des collaborateurs.
-              </span>
-              <br />
             </div>
             </div>
           </div>
