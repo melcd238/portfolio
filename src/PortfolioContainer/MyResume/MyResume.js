@@ -68,9 +68,9 @@ const MyResume = ({id})=>{
             </div>
             <div className="experience-description">
               <span className="resume-description-text">
-              Réalisation de projets web de A à Z et optimisation des interfaces de mes sites.
+              Réalisation d'application web et optimisation des interfaces.
               Tester le bon fonctionnement de l’application et corriger le code quand c’est nécessaire.
-              Assurer le support technique du site et produire une documentation technique et fonctionnelle du site pour le client.
+              Assurer le support technique  et produire une documentation technique et fonctionnelle.
               </span>
               <br />
             </div>
