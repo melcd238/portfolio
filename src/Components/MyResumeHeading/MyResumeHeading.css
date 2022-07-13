@@ -47,4 +47,12 @@
     .resume-main-heading span {
       font-size: 16px;
     }
+    .heading-bullet {
+      position: absolute;
+      left: -20px;
+      height: 4px;
+      width: 4px;
+      top: 5px;
+      border-radius: 50%;
+    }
   }

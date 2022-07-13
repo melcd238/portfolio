@@ -15,7 +15,7 @@
   
   .resume-card {
     display: flex;
-    height: 360px;
+    height: fit-content;
     width: 1000px;
     /* margin: 80px 0; */
   }
@@ -210,17 +210,18 @@
     }
   
     .resume-card {
-      height: 75vh; 
       display: flex;
       flex-direction: column;
+      height:fit-content;
       margin: 30px 0;
       align-items: center;
-      width: 80%;
+      width: 90%;
     }
   
     .resume-bullet-details {
       padding: 8px 30px;
       width: fit-content;
+      height: 360px;
     }
   
     .resume-bullets {
@@ -242,17 +243,14 @@
       margin: 0;
       width: 90%;
     }
-    .resume-screen-container {
-      display: flex;
-      flex-direction: column;
-      justify-content:flex-start;
-      height: 360px;
-      width: 100%;
-    }
     .experience-description {
       margin: 0px;
     }
     .resume-bullet-details {
       padding: 10px 10px 2px 30px;
     }
+    .skill-parent span {
+      font-size: 14px;
+    }
+
   }  
