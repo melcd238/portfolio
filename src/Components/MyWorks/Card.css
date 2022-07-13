@@ -67,6 +67,9 @@
         height: 472px;
      
     }
+    .card-desc{
+        gap:10px; 
+    }
 }
 @media only screen and (max-width: 321px){
     .card-container{

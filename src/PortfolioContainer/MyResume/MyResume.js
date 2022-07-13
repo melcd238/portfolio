@@ -141,7 +141,7 @@ const MyResume = ({id})=>{
           />
            <MyResumeHeading
             heading="Les Jeux Olympiques"
-            description="Une passion pour le sport et le dépassement de soit des athlètes. Pourvoyeurs de grandes émotions"
+            description="Une passion pour le sport et le dépassement de soit des athlètes. Pourvoyeurs de grandes émotions."
           />
         </div>,
       ];
