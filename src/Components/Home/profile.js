@@ -15,9 +15,12 @@ const Profil = ()=>{
                      wrapper="h2"
                      repeat={Infinity}/>
                 </div>
+                
+                <div className='profil-desc'>
+                  <p>Amoureuse de React.js et de son ecosystème, j'ai une appétence pour le frontend...</p>
+                  <p>J'apprécie aussi construire des applications MERN</p> 
 
-                <p>Amoureuse de React.js et de son ecosystème, j'ai une appétence pour le frontend...</p>
-                <p>J'apprécie aussi construire des applications MERN</p> 
+                </div>
 
                 <div className='profil_btn'>
                     <div><button className='btn'>Me contacter</button></div>
