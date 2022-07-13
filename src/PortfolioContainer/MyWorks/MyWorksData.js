@@ -85,7 +85,7 @@ export const myWorksProjects = [
     {   
         id:8,
         title: "ArgentBank",
-        description:"Authentification des utilisateurs d'une application banquaire et gestion du compte profil. Le state de l'ensemble de l'application est géré avec redux et reduxToolkit.",
+        description:"Authentification des utilisateurs d'une application banquaire et gestion du compte profil.",
         img:argentBank_small,
         lienGithub:"https://github.com/melcd238/DonatiMelaina_P13_13062022",
         url:null,

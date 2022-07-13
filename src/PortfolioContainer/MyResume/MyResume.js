@@ -52,7 +52,7 @@ const MyResume = ({id})=>{
         </div>,
     
         /* WORK EXPERIENCE */
-        <div className="resume-screen-container" key="work-experience">
+        <div className="resume-screen-container programming-skills-container" key="work-experience">
           <div className="experience-container">
               <div className='experience-container-one'>
             <MyResumeHeading
@@ -90,7 +90,7 @@ const MyResume = ({id})=>{
             <div className="experience-description">
               <span className="resume-description-text">
               Encadrement et accompagnement du personnel (2 salariés), animation des
-              réunions de travail, répartition des missions et suivi des résultats, veille au bien-être des collaborateurs.
+              réunions de travail, répartition des missions et  veille au bien-être des collaborateurs.
               </span>
               <br />
             </div>
@@ -126,7 +126,7 @@ const MyResume = ({id})=>{
       ,
     
         /* Interests */
-        <div className="resume-screen-container" key="interests">
+        <div className="resume-screen-container programming-skills-container" key="interests">
           <MyResumeHeading
             heading="Batterie"
             description="Après une journée à coder,c'est toujours un plaisir de se défouler à la batterie en gardant le rythme."

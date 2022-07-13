@@ -10,7 +10,7 @@
   }
   
   .resume-main-heading span {
-    color: #90028D;;
+    color: #90028D;
     font-size: 16px;
     font-family: "Poppins SemiBold";
   }
@@ -42,4 +42,9 @@
     font-size: 14px;
     border-radius: 14px;
     color: white;
+  }
+  @media only screen and (max-width: 580px){
+    .resume-main-heading span {
+      font-size: 16px;
+    }
   }

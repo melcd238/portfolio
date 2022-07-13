@@ -17,7 +17,7 @@ const Carousel = ()=>{
 
     return(
         <motion.div ref={carouselRef}  className='carousel'>
-            <motion.div className='inner-carousel' drag="x" dragConstraints={{left: - width, right: width}}>
+            <motion.div className='inner-carousel' drag="x" dragConstraints={{left: - width, right: width }}>
                {myWorksProjects.map((project)=>(
                      <Card key={project.id} {...project}/>
                )
