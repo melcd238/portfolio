@@ -134,14 +134,14 @@ form label {
         align-items:center;
         width:90%;
         margin-bottom:40px;
-        padding-top:40px;
+        padding:40px;
 
     }
     .contact-form{
-        width:80%;
+        width:90%;
     }
     .contact-mail{
-        width:80%; 
+       display:none;
     }
     .copyRights{
         font-size: 12px;
