@@ -78,6 +78,10 @@
       gap:10px;
 
   }
+  q{
+      font-style:italic;
+      
+  }
   @media screen and (max-width: 1110px){
     .profil_container{
         gap:20x;
@@ -85,6 +89,9 @@
     .profil_resume{
       margin-left:20px;
         
+    }
+    q{
+        margin:20px;
     }
     .profil_picture{
         margin-right:20px;

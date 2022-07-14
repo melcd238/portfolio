@@ -19,7 +19,7 @@ const Profil = ()=>{
                 
                 <div className='profil-desc'>
                   <p>Amoureuse de React.js et de son ecosystème...</p>
-                  <p>J'apprécie aussi construire des applications MERN</p> 
+                  <q>Oser ouvrir une porte demande parfois du courage. La franchir et continuer son chemin demande de la résilience.</q> 
 
                 </div>
 
