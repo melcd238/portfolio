@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     color: white;
-    width: 100%;
+    width: 70%;
+    margin:auto;
     flex: 1;
 }
 .profil_resume{
@@ -11,6 +12,7 @@
     flex-direction:column;
     align-items: center;
     justify-content: center;
+    width:50%;
     
 }
 .profil_animation{
@@ -28,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width:50%;
 }
 .profil_picture_border{
     display: flex;
@@ -55,6 +58,7 @@
     border:none;
     background-color:#90028D;
     color:white;
+    font-size:18px;
   }
   .btn a{
     color:white;
@@ -95,28 +99,37 @@
        font-size:16px;  
     } 
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 980px){
     .profil_container{
-        flex-direction: column;
-        gap:10px;
+        flex-direction: column-reverse;
+        width: 100%;
+        gap:30px;
+    }
+    .profil_resume{
+        width:100%;
+        
+    }
+    .profil_picture{
+        width:100%;
     }
     .profil_picture_border img{
-        width: 180px;
-        height:180px;
+        width: 160px;
+        height:160px;
         border-radius: 50%;
+        border:1px solid #90028D;
         
     }
     .btn {
         width: 114px;
       }
      h1{
-         font-size:24px;
+         font-size:28px;
      }
      h2{
-        font-size:18px;
+        font-size:24px;
      }
      p{
-        font-size:14px;  
+        font-size:20px;  
      } 
      .profil_social_media{
         margin-top: 18px;

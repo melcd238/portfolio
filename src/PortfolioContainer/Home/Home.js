@@ -3,9 +3,9 @@ import Header from "../../Components/Home/Header"
 import './Home.css'
 import footer from '../../Assets/Background/shape-bg.png'
 
-const Home = ()=>{
+const Home = ({id})=>{
 return(
-    <div className="home_container">
+    <div className="home_container" id={id}>
         <Header/>
         <Profil/>
         <div className="home_footer">

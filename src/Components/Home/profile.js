@@ -1,6 +1,7 @@
 import TypeAnimation from 'react-type-animation';
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import melPicture from '../../Assets/melProfil.jpg';
+import ScrollService from '../../Utils/ScrollService';
 import "./profile.css"
 
 const Profil = ()=>{
@@ -17,13 +18,13 @@ const Profil = ()=>{
                 </div>
                 
                 <div className='profil-desc'>
-                  <p>Amoureuse de React.js et de son ecosystème, j'ai une appétence pour le frontend...</p>
+                  <p>Amoureuse de React.js et de son ecosystème...</p>
                   <p>J'apprécie aussi construire des applications MERN</p> 
 
                 </div>
 
                 <div className='profil_btn'>
-                    <div><button className='btn'>Me contacter</button></div>
+                    <div><button className='btn' onClick={() => ScrollService.scrollHandler.scrollToContactMe()}>Me contacter</button></div>
                     <div>
                     <button className='btn'><a href="mdonatiCV.pdf" download="mdonatiCV.pdf">Mon CV</a></button>
                     </div>

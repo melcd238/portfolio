@@ -1,0 +1,31 @@
+.btn-scroll{
+    outline: none;
+    color: rgb(230, 227, 227);
+    border: 2px solid  #23263b;
+    border-radius: 19px;
+    background-color:  #B14238;
+    font-size: 18px;
+    width: 80px;
+    padding: 10px;
+}
+.btn-scroll:hover{
+    background-color: #23263b;
+    transition: all ease 1s;
+    border: 2px solid  #B14238;
+}
+.btn-arrow{
+    color: white;
+    font-size: 1.6rem;
+    -webkit-animation: mover 0.5s infinite alternate;
+    animation: mover 0.5s infinite alternate;
+}
+
+@keyframes mover {
+    100% {
+      transform: translateY(-5px);
+    }
+    0% {
+      transform: translateX(0px);
+    }
+  }
+  

@@ -5,7 +5,7 @@ import ScrollService from '../../Utils/ScrollService';
 import Animations from '../../Utils/Animations';
 import Carousel from '../../Components/MyWorks/Carousel';
 import { motion } from 'framer-motion';
-
+import BtnScroll from '../../Components/BtnScroll/BtnScroll'
 
 
 const MyWorks = ({id})=>{
@@ -31,7 +31,9 @@ const MyWorks = ({id})=>{
             <ScreenTitle title="My Works" subtitle="Quelques projets personnels et projets de formation"/>
             <motion.div className='carousel-container'>
                 <Carousel/>
+                <BtnScroll/>
             </motion.div>
+            
         </div>
 
     )

@@ -4,6 +4,7 @@ import ScreenTitle from '../../Components/ScreenTitle/ScreenTitle';
 import ScrollService from '../../Utils/ScrollService';
 import Animations from '../../Utils/Animations';
 import AboutIMG from '../../Assets/aboutMe.jpg';
+import BtnScroll from '../../Components/BtnScroll/BtnScroll'
 
 
 
@@ -42,7 +43,7 @@ const AboutMe= ({id})=>{
                    </div>
                 </div>
             </div>
-      
+              <BtnScroll/>
         </div>
     )
 }

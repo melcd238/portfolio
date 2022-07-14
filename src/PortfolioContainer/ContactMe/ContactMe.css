@@ -19,7 +19,7 @@
     border-radius:2px;
 }
 .footer-container{
-    height:200px;
+    height:240px;
     background-color: #23263b;
     color:white;
     display: flex;
@@ -142,5 +142,11 @@ form label {
     }
     .contact-mail{
         width:80%; 
+    }
+    .copyRights{
+        font-size: 12px;
+    }
+    .footer-container{
+        gap:10px;
     }
   }

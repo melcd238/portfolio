@@ -6,7 +6,8 @@ import Animations from '../../Utils/Animations';
 import logo from '../../Assets/logoP.png';
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import email from "../../Assets/pexelEmail.jpg"
-import { BiMailSend } from "react-icons/bi"
+import { BiMailSend } from "react-icons/bi";
+import BtnScroll from '../../Components/BtnScroll/BtnScroll'
 
 
 const ContactMe =({id})=>{
@@ -59,6 +60,7 @@ const ContactMe =({id})=>{
                     <a href="https://www.linkedin.com/in/mel-donati-1aa4081b0/" target="_blank" rel="noreferrer"><FaLinkedinIn style={{color:"white", fontSize:"30px"}}/></a>
                     <a href="https://github.com/melcd238" target="_blank" rel="noreferrer"><FaGithub style={{color:"white", fontSize:"30px"}}/></a>
                </div>
+               <BtnScroll/>
              </footer>
         </div>
     )
