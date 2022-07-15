@@ -78,7 +78,7 @@
     padding:40px;
 }
 .form label {
-    margin-bottom: 5px;
+    margin: 5px 0px;
     color: #111;
     letter-spacing: 0.2rem;
   }
@@ -91,7 +91,7 @@
     background-color: rgba(230, 230, 230, 0.6);
     padding: 0.5rem 1.5rem;
     font-size: 1.1rem;
-    margin-bottom: 22px;
+    margin-bottom: 8px;
     transition: 0.3s;
     border-radius: 10px;
   }

@@ -42,12 +42,14 @@ const ContactMe =({id})=>{
                                  <Formik initialValues={{ name: '', email: '', message:"" }}
                                   validationSchema={yup.object({
                                     name:yup.string()
-                                     .required("Nom attendu"),  
+                                     .required("Nom attendu")
+                                     .matches(/^[aA-zZ\s]+$/, 'Utiliser un nom valide')
+                                     .max(30),  
                                     email:yup.string()
                                        .required("Email attendu!")
-                                       .email('Doit être un email'),
+                                       .email('Doit être un email.'),
                                     message:yup.string()
-                                       .required("Message attendu")  
+                                       .required("Message attendu!")  
                                   })}
                                   onSubmit={(values, { setSubmitting }) => {
                                    setSubmitting(false)
@@ -57,15 +59,15 @@ const ContactMe =({id})=>{
                                  <Form className="form">
 
                                  <label htmlFor="name">Nom</label>
-                                 <Field className="input" type="text" id="name" name="name"/>
-                                 <ErrorMessage name="name" component="div" style={{color: "red"}} />
+                                 <Field className="input" type="text" id="name" name="name" required/>
+                                 <ErrorMessage name="name" component="div" style={{color: "red"}} className="error-message" />
 
                                  <label htmlFor="email">Email</label>
-                                 <Field className="input" type="email" id="email" name="email"/>
+                                 <Field className="input" type="email" id="email" name="email" required/>
                                  <ErrorMessage name="email" component="div" style={{color: "red"}} />
 
                                  <label htmlFor="message">Message</label>
-                                 <Field className="textarea"type="text" id="message" name="message"/>
+                                 <Field className="textarea"type="text" id="message" name="message" required/>
                                  <ErrorMessage name="message" component="div" style={{color: "red"}} />
 
                                  <button type="submit" disabled={isSubmitting}>Envoyer <span><BiMailSend/></span></button>
