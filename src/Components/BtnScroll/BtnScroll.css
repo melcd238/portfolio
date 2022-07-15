@@ -1,17 +1,16 @@
 .btn-scroll{
     outline: none;
     color: rgb(230, 227, 227);
-    border: 2px solid  #23263b;
     border-radius: 19px;
-    background-color:  #B14238;
+    background-color: #23263b;
     font-size: 18px;
     width: 80px;
     padding: 10px;
+    border:none;
 }
 .btn-scroll:hover{
-    background-color: #23263b;
+    background-color: #B14238;
     transition: all ease 1s;
-    border: 2px solid  #B14238;
 }
 .btn-arrow{
     color: white;

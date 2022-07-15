@@ -6,6 +6,7 @@ import "./profile.css"
 
 const Profil = ()=>{
     return(
+        <>
         <div className="profil_container">
             <div className="profil_resume">
                 <h1>👋 Je suis <span>Mélaïna Donati</span> 👋 </h1>
@@ -19,8 +20,6 @@ const Profil = ()=>{
                 
                 <div className='profil-desc'>
                   <p>Amoureuse de React.js et de son ecosystème...</p>
-                  <q>Oser ouvrir une porte demande parfois du courage. La franchir et continuer son chemin demande de la résilience.</q> 
-
                 </div>
 
                 <div className='profil_btn'>
@@ -40,10 +39,12 @@ const Profil = ()=>{
                 <div className='profil_picture_border'>
                    <img src={melPicture} alt="profil de mel donati"></img>
                 </div>
-
+               
             </div>
-        
+            
         </div>
+        <q>Oser ouvrir une porte demande parfois du courage. La franchir et continuer son chemin demande de la résilience.</q> 
+        </>
     )
 }
 

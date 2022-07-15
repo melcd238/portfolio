@@ -33,9 +33,9 @@ const MyResume = ({id})=>{
         <div className="resume-screen-container" key="education">
           <MyResumeHeading
             heading={"OpenClassRooms"}
-            subHeading={"RNCP niveau 6 Développeuse d'application - JavaScript React"}
+            subHeading={"RNCP niveau 6 Développeuse d'application - JavaScript React.JS"}
             fromDate={"2021"}
-            toDate={"En cours"}
+            toDate={"2022"}
           />
     
           <MyResumeHeading
@@ -60,7 +60,7 @@ const MyResume = ({id})=>{
               heading={"Divers projets personnels et projets de formation"}
               subHeading={"FULL STACK ET REACT DEVELOPPEUSE"}
               fromDate={"2020"}
-              toDate={"Present"}
+              toDate={"En cours"}
             />
             <div className="experience-description">
               <span className="resume-description-text">

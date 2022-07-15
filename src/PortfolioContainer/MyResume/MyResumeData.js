@@ -1,6 +1,6 @@
 export const resumeBullets = [
-    { label: "Formation", logoSrc: "education.svg" },
-    { label: "Expérience", logoSrc: "work-history.svg" },
+    { label: "Formations", logoSrc: "education.svg" },
+    { label: "Expériences", logoSrc: "work-history.svg" },
     { label: "Skills", logoSrc: "programming-skills.svg" },
     { label: "Soft skills", logoSrc: "projects.svg" },
     { label: "Centres d'intérêt", logoSrc: "interests.svg" },
@@ -8,14 +8,14 @@ export const resumeBullets = [
 
 export  const programmingSkillsDetails = [
     { skill: "JavaScript"},
-    { skill: "React JS"},
+    { skill: "React.js"},
     { skill: "Redux - Redux Toolkit"},
-    { skill: "Express JS" },
-    { skill: "Node JS"},
-    { skill: "Mongo Db"},
+    { skill: "Express.js" },
+    { skill: "Node.js"},
+    { skill: "MongoDb"},
     { skill: "D3.js"},
-    { skill: "HTML"},
-    { skill: "CSS"},
+    { skill: "HTML5"},
+    { skill: "CSS3"},
     { skill: "Figma AdobeXD"},
   ]; 
 
@@ -27,7 +27,7 @@ export  const programmingSkillsDetails = [
           skill : "Résiliente"
       },
       {
-          skill : "Currieuse"
+          skill : "Curieuse"
       },
       {
           skill : "Adore apprendre"
@@ -36,6 +36,6 @@ export  const programmingSkillsDetails = [
           skill : "Ne lâche jamais rien"
       },
       {
-        skill : "Loyal"
+        skill : "Loyale"
       }
   ]

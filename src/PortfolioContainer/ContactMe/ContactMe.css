@@ -77,35 +77,35 @@
     flex-direction: column; 
     padding:40px;
 }
-form label {
+.form label {
     margin-bottom: 5px;
     color: #111;
     letter-spacing: 0.2rem;
   }
   
-  form input,
-  textarea {
+  .form .input,
+  .textarea {
     width: 100%;
     border: 2px solid rgba(0, 0, 0, 0);
     outline: none;
     background-color: rgba(230, 230, 230, 0.6);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     font-size: 1.1rem;
     margin-bottom: 22px;
     transition: 0.3s;
     border-radius: 10px;
   }
   
-  textarea:focus {
+  .textarea:focus {
     border: 2px solid  #23263b;
     background-color: #fff;
   }
-  form input:focus {
+  .form .input:focus {
     border: 2px solid  #23263b;
     background-color: #fff;
   }
   
-  form button {
+  .form button {
     margin-top: 15px;
     padding: 5px;
     outline: none;
@@ -114,17 +114,24 @@ form label {
     border: 2px solid  #23263b;
     font-size: 12px;
     border-radius: 19px;
-    background-color:  #B14238;
+    background-color:  #23263b;
     font-size: 18px;
     width: 160px;
     align-items: center;
     justify-content: center;
   }
   
-  form button:hover {
+  .form button:hover {
     background-color: #23263b;
     transition: all ease 1s;
     border: 2px solid  #B14238;
+  }
+  .btn-contact-footer-scroll{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      margin-bottom:20px;
+
   }
 
   @media screen and (max-width: 800px){

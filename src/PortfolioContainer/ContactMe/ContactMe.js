@@ -7,7 +7,9 @@ import logo from '../../Assets/logoP.png';
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import email from "../../Assets/pexelEmail.jpg"
 import { BiMailSend } from "react-icons/bi";
-import BtnScroll from '../../Components/BtnScroll/BtnScroll'
+import BtnScroll from '../../Components/BtnScroll/BtnScroll';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as yup from 'yup';
 
 
 const ContactMe =({id})=>{
@@ -37,19 +39,48 @@ const ContactMe =({id})=>{
                          </div>
                          <div className="contact-form">
                              <div className="form-content">
-                                 <form className="form">
+                                 <Formik initialValues={{ name: '', email: '', message:"" }}
+                                  validationSchema={yup.object({
+                                    name:yup.string()
+                                     .required("Nom attendu"),  
+                                    email:yup.string()
+                                       .required("Email attendu!")
+                                       .email('Doit être un email'),
+                                    message:yup.string()
+                                       .required("Message attendu")  
+                                  })}
+                                  onSubmit={(values, { setSubmitting }) => {
+                                   setSubmitting(false)
+                                    
+                                  }}>
+                                  {({ isSubmitting }) => (
+                                 <Form className="form">
+
                                  <label htmlFor="name">Nom</label>
-                                 <input type="text"/>
-                                 <label htmlFor="name">Email</label>
-                                 <input type="email"/>
-                                 <label htmlFor="name">Message</label>
-                                 <textarea type="text"/>
-                                 <button type="submit">Envoyer <span><BiMailSend/></span></button>
-                                 </form>
+                                 <Field className="input" type="text" id="name" name="name"/>
+                                 <ErrorMessage name="name" component="div" style={{color: "red"}} />
+
+                                 <label htmlFor="email">Email</label>
+                                 <Field className="input" type="email" id="email" name="email"/>
+                                 <ErrorMessage name="email" component="div" style={{color: "red"}} />
+
+                                 <label htmlFor="message">Message</label>
+                                 <Field className="textarea"type="text" id="message" name="message"/>
+                                 <ErrorMessage name="message" component="div" style={{color: "red"}} />
+
+                                 <button type="submit" disabled={isSubmitting}>Envoyer <span><BiMailSend/></span></button>
+                                 </Form>
+                                  )}
+                                 </Formik>
                              </div>
 
                          </div>
                      </div>
+                   
+                     
+             </div>
+             <div className="btn-contact-footer-scroll">
+                <BtnScroll/>
              </div>
              <footer className="footer-container">
                <div className="imgContainer">
@@ -60,7 +91,7 @@ const ContactMe =({id})=>{
                     <a href="https://www.linkedin.com/in/mel-donati-1aa4081b0/" target="_blank" rel="noreferrer"><FaLinkedinIn style={{color:"white", fontSize:"30px"}}/></a>
                     <a href="https://github.com/melcd238" target="_blank" rel="noreferrer"><FaGithub style={{color:"white", fontSize:"30px"}}/></a>
                </div>
-               <BtnScroll/>
+               
              </footer>
         </div>
     )
