@@ -15,7 +15,7 @@ export const myWorksProjects = [
     {   
         id:1,
         title: "Portfolio",
-        description:"Portfolio réalisé avec React, RxJs, Framer-motion permettant de me présenter et de montrer mon travail.",
+        description:"Portfolio réalisé avec React, RxJs, Framer-motion.",
         img:portfolioImg,
         lienGithub:"https://github.com/melcd238/portfolio",
         url:"https://melcd238portfolio.netlify.app/",

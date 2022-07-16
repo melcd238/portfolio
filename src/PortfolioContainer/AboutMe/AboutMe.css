@@ -57,6 +57,9 @@
     .about-me-profile {
         width: 100%;
     }
+    .about-me-profile img {
+      width: 90%;
+  }
     .about-me-details {
         width: 100%;
         padding: 2px;
