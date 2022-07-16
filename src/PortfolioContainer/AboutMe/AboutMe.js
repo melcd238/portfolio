@@ -49,7 +49,7 @@ const AboutMe= ({id})=>{
                             Si mon profil attire votre curiosité, n'hésitez pas à me contacter...
                         </p>
                         <div className="about-me-trait"></div>
-                        <div><button className='btn' onClick={() => ScrollService.scrollHandler.scrollToContactMe()}>Me contacter</button></div>
+                        <div><button className='btn-aboutMe' onClick={() => ScrollService.scrollHandler.scrollToContactMe()}>Me contacter</button></div>
                    </div>
                 </div>
             </div>
