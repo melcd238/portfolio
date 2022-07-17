@@ -10,7 +10,7 @@ import BtnScroll from '../../Components/BtnScroll/BtnScroll'
 
 const MyWorks = ({id})=>{
     let fadeInScreenHandler = (screen)=>{
-        if(screen.fadeScreen !== id){
+        if(screen.fadeInScreen !== id){
             return Animations.animations.fadeInScreen(id)
         }
     }
@@ -27,7 +27,7 @@ const MyWorks = ({id})=>{
 
 
     return(
-        <div id={id} className="my-works-container">
+        <div id={id} className="my-works-container fade-in">
             <ScreenTitle title="My Works" subtitle="Quelques projets personnels et projets de formation"/>
             <motion.div className='carousel-container'>
                 <Carousel/>

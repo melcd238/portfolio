@@ -14,7 +14,7 @@ const MyResume = ({id})=>{
     const [offSetStyle, setOffSetStyle] = useState({})
 
     let fadeInScreenHandler = (screen)=>{
-        if(screen.fadeScreen !== id){
+        if(screen.fadeInScreen !== id){
             return Animations.animations.fadeInScreen(id)
         }
     }
@@ -30,7 +30,7 @@ const MyResume = ({id})=>{
 
 
       const resumeDetails = [
-        <div className="resume-screen-container" key="education">
+        <div className="resume-screen-container fade-in" key="education">
           <MyResumeHeading
             heading={"OpenClassRooms"}
             subHeading={"RNCP niveau 6 Développeuse d'application - JavaScript React.JS"}

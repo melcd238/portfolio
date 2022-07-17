@@ -12,10 +12,11 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 
 
+
 const ContactMe =({id})=>{
 
     let fadeInScreenHandler = (screen)=>{
-        if(screen.fadeScreen !== id){
+        if(screen.fadeInScreen !== id){
             return Animations.animations.fadeInScreen(id)
         }
     }
@@ -29,7 +30,7 @@ const ContactMe =({id})=>{
       }, [fadeInSub]);
 
     return(
-        <div className="contact-container" id={id}>
+        <div className="contact-container fade-in" id={id}>
              <ScreenTitle title="Contact Me" subtitle="Restons en contact !!"/>
              <div className="contact-content">
                      <div className="contact-form-container">
@@ -44,15 +45,19 @@ const ContactMe =({id})=>{
                                     name:yup.string()
                                      .required("Nom attendu")
                                      .matches(/^[aA-zZ\s]+$/, 'Utiliser un nom valide')
-                                     .max(30),  
+                                     .min (2, "Trop court!")
+                                     .max(50, "Trop long!"),  
                                     email:yup.string()
                                        .required("Email attendu!")
                                        .email('Doit être un email.'),
                                     message:yup.string()
-                                       .required("Message attendu!")  
+                                       .required("Message attendu!") 
+                                       .min (10, "Trop court!") 
                                   })}
                                   onSubmit={(values, { setSubmitting }) => {
+                                   console.log(values)
                                    setSubmitting(false)
+                                   
                                     
                                   }}>
                                   {({ isSubmitting }) => (

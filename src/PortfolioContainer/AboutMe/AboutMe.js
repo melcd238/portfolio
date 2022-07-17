@@ -11,7 +11,7 @@ import BtnScroll from '../../Components/BtnScroll/BtnScroll';
 
 const AboutMe= ({id})=>{
     let fadeInScreenHandler = (screen)=>{
-        if(screen.fadeScreen !== id){
+        if(screen.fadeInScreen !== id){
             return Animations.animations.fadeInScreen(id)
         }
     }
@@ -25,7 +25,7 @@ const AboutMe= ({id})=>{
       }, [fadeInSub]);
 
     return(
-        <div className="about-me-container screen-container" id={id || ""}>
+        <div className="about-me-container screen-container fade-in" id={id || ""}>
             <div className="about-me-parent">
                 <ScreenTitle title="About Me" subtitle="Pourquoi me choisir?"/>
                 <div className="about-me-card">
