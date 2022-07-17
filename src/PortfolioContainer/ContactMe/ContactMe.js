@@ -1,5 +1,5 @@
 import "./ContactMe.css"
-import { useEffect } from 'react';
+import { useEffect} from 'react';
 import ScreenTitle from '../../Components/ScreenTitle/ScreenTitle'
 import ScrollService from '../../Utils/ScrollService';
 import Animations from '../../Utils/Animations';
@@ -15,6 +15,7 @@ import emailjs from 'emailjs-com'
 
 
 const ContactMe =({id})=>{
+   
     
     let fadeInScreenHandler = (screen)=>{
         if(screen.fadeInScreen !== id){
@@ -34,8 +35,14 @@ const ContactMe =({id})=>{
         emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE,process.env.REACT_APP_EMAILJS_TEMPLATE , object, process.env.REACT_APP_EMAILJS_USERID)
             .then((result) => {
                 console.log(result.text)
+                if(result.text){
+                    ScrollService.scrollHandler.scrollToHome();
+                }
             }, (error) => {
                 console.log(error.text)
+                if(error.text){
+                    alert("Oups!! un problème est survenu!!")
+                }
             })
     }
     
@@ -65,11 +72,16 @@ const ContactMe =({id})=>{
                                        .required("Message attendu!") 
                                        .min (10, "Trop court!") 
                                   })}
-                                  onSubmit={(values, { setSubmitting }) => {
+                                  onSubmit={(values, { setSubmitting, resetForm }) => {
                                    SendEmail(values)
                                    setSubmitting(false)
+                                   resetForm({
+                                    values: {
+                                      name: '',
+                                      email: '',
+                                      message: '',
+                                    }})
                                    
-                                    
                                   }}>
                                   {({ isSubmitting }) => (
                                  <Form className="form">
