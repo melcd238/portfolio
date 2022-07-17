@@ -10,11 +10,12 @@ import { BiMailSend } from "react-icons/bi";
 import BtnScroll from '../../Components/BtnScroll/BtnScroll';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
+import emailjs from 'emailjs-com'
 
 
 
 const ContactMe =({id})=>{
-
+    
     let fadeInScreenHandler = (screen)=>{
         if(screen.fadeInScreen !== id){
             return Animations.animations.fadeInScreen(id)
@@ -28,6 +29,16 @@ const ContactMe =({id})=>{
           fadeInSub.unsubscribe();
         };
       }, [fadeInSub]);
+
+      function SendEmail(object) {
+        emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE,process.env.REACT_APP_EMAILJS_TEMPLATE , object, process.env.REACT_APP_EMAILJS_USERID)
+            .then((result) => {
+                console.log(result.text)
+            }, (error) => {
+                console.log(error.text)
+            })
+    }
+    
 
     return(
         <div className="contact-container fade-in" id={id}>
@@ -55,7 +66,7 @@ const ContactMe =({id})=>{
                                        .min (10, "Trop court!") 
                                   })}
                                   onSubmit={(values, { setSubmitting }) => {
-                                   console.log(values)
+                                   SendEmail(values)
                                    setSubmitting(false)
                                    
                                     
