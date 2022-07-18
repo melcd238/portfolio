@@ -9,6 +9,7 @@ import sportsee_small from '../../Assets/Projets/sportsee_small.png';
 import argentBank_small from '../../Assets/Projets/argentBank_small.png';
 import orinico_small from '../../Assets/Projets/orinico_small.png';
 import goupomania_small from '../../Assets/Projets/goupomania_small.png';
+import hrnet from '../../Assets/Projets/hrnet.png';
 
 
 export const myWorksProjects = [
@@ -116,10 +117,10 @@ export const myWorksProjects = [
         id:11,
         title: "HRnet",
         description:"Passer une librairie jQuery vers React.",
-        img:"",
-        lienGithub:"",
+        img:hrnet,
+        lienGithub:"https://github.com/melcd238/DonatiMelaina_P14_18072022",
         url:"",
-        type:"Projet de formation",
+        type:"Projet de formation, en cours",
         techno : ["react", "react-router", "redux"] 
     }
 
