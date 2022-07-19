@@ -1,6 +1,6 @@
 .carousel{
     width: 68%;
-    height:60vh;
+    height:68vh;
     background-color: white;
     border-radius:5px;
     box-shadow: 0 0px 14px -2px black;
@@ -19,6 +19,7 @@
 @media only screen and (max-width: 1023px) {
     .carousel{
         width: 80%;
+        height:74vh;
     }
 }
 @media only screen and (max-width: 580px){
