@@ -1,8 +1,11 @@
+import React, {Suspense} from 'react';
 import TypeAnimation from 'react-type-animation';
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import melPicture from '../../Assets/melProfil.jpg';
 import ScrollService from '../../Utils/ScrollService';
-import "./profile.css"
+import "./profile.css";
+import { Canvas } from '@react-three/fiber';
+import BoxProfile from './BoxProfile';
+import { OrbitControls } from '@react-three/drei';
 
 const Profil = ()=>{
     return(
@@ -35,12 +38,16 @@ const Profil = ()=>{
                 </div>   
 
             </div>
-            <div className="profil_picture">
-                <div className='profil_picture_border'>
-                   <img src={melPicture} alt="profil de mel donati"></img>
-                </div>
-               
-            </div>
+
+
+            <Canvas className="profil_picture" style={{height:"340px"}}>
+               <OrbitControls enableZoom={false}/>
+               <ambientLight intensity={0.5}/>
+               <directionalLight position={[-2, 5, 2]} intensity={1}/>
+               <Suspense fallback={null}>
+               <BoxProfile/>
+               </Suspense>
+            </Canvas>
             
         </div>
         <q>Oser ouvrir une porte demande parfois du courage. La franchir et continuer son chemin demande de la résilience.</q> 
