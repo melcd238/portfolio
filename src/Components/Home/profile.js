@@ -5,6 +5,7 @@ import ScrollService from '../../Utils/ScrollService';
 import "./profile.css";
 import { Canvas } from '@react-three/fiber';
 import BoxProfile from './BoxProfile';
+
 import { OrbitControls } from '@react-three/drei';
 
 const Profil = ()=>{
