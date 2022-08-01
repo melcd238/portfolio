@@ -41,10 +41,10 @@ const Profil = ()=>{
             </div>
 
 
-            <Canvas className="profil_picture" style={{height:"340px"}}>
+            <Canvas className="profil_picture" style={{height:"380px"}}>
                <OrbitControls enableZoom={false}/>
                <ambientLight intensity={0.5}/>
-               <directionalLight position={[-2, 5, 2]} intensity={1}/>
+               <directionalLight position={[-8, 5, 2]} intensity={1}/>
                <Suspense fallback={null}>
                <BoxProfile/>
                </Suspense>
