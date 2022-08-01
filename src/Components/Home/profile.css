@@ -68,6 +68,13 @@
   .btn:active {
     transform: translateY(4px);
   }
+  .btn:hover{
+    background-color:white; 
+    color: #90028D;
+  }
+  .btn:hover a{
+    color:#90028D;
+}
   h1 span{
       color:#90028D;
   }
