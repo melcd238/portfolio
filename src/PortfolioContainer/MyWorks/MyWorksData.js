@@ -120,7 +120,7 @@ export const myWorksProjects = [
         img:hrnet,
         lienGithub:"https://github.com/melcd238/DonatiMelaina_P14_18072022",
         url:"https://melcd238-hrnet.netlify.app/",
-        type:"Projet de formation, en cours",
+        type:"Projet de formation",
         techno : ["react", "react-router", "redux"] 
     }
 
