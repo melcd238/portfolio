@@ -10,6 +10,7 @@ import argentBank_small from '../../Assets/Projets/argentBank_small.png';
 import orinico_small from '../../Assets/Projets/orinico_small.png';
 import goupomania_small from '../../Assets/Projets/goupomania_small.png';
 import hrnet from '../../Assets/Projets/hrnet.png';
+import npmModal from '../../Assets/Projets/npmModal.png';
 
 
 export const myWorksProjects = [
@@ -127,7 +128,7 @@ export const myWorksProjects = [
         id:12,
         title: "React modal component",
         description:"Composant réutilisable react modal publiée sur npm",
-        img:hrnet,
+        img:npmModal,
         lienGithub:"https://github.com/melcd238/library-react-modal-09082022",
         url:"https://www.npmjs.com/package/simple-modal-component-library",
         type:"Projet de formation",
