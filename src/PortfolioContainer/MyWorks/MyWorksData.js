@@ -122,6 +122,17 @@ export const myWorksProjects = [
         url:"https://melcd238-hrnet.netlify.app/",
         type:"Projet de formation",
         techno : ["react", "react-router", "redux"] 
-    }
+    },
+    {   
+        id:12,
+        title: "React modal component",
+        description:"Composant réutilisable react modal publiée sur npm",
+        img:hrnet,
+        lienGithub:"https://github.com/melcd238/library-react-modal-09082022",
+        url:"https://www.npmjs.com/package/simple-modal-component-library",
+        type:"Projet de formation",
+        techno : ["react"] 
+    },
+
 
 ];
