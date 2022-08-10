@@ -119,7 +119,7 @@ export const myWorksProjects = [
         description:"Passer une librairie jQuery vers React.",
         img:hrnet,
         lienGithub:"https://github.com/melcd238/DonatiMelaina_P14_18072022",
-        url:"",
+        url:"https://melcd238-hrnet.netlify.app/",
         type:"Projet de formation, en cours",
         techno : ["react", "react-router", "redux"] 
     }
