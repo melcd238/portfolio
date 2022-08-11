@@ -77,7 +77,7 @@ export const myWorksProjects = [
     {   
         id:7,
         title: "SportSee",
-        description:"Page profil d'un utilisateur d'une application de coaching sportif réalisé avec D3.js.",
+        description:"Page profil d'un utilisateur d'une application de coaching sportif réalisé avec D3.js.(non responsive).",
         img:sportsee_small,
         lienGithub:"https://github.com/melcd238/DonatiMelaina_P12_06052022",
         url:"https://melcd238sportsee.netlify.app/",
