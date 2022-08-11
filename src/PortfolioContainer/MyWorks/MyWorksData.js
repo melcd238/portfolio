@@ -90,7 +90,6 @@ export const myWorksProjects = [
         description:"Authentification des utilisateurs d'une application banquaire et gestion du compte profil.",
         img:argentBank_small,
         lienGithub:"https://github.com/melcd238/DonatiMelaina_P13_13062022",
-        url:null,
         type:"Projet de formation",
         techno : ["react", "react-router", "redux"]
     },
@@ -100,7 +99,6 @@ export const myWorksProjects = [
         description:"Site de vente de nounours avec utilisation d'une APi externe.",
         img:orinico_small,
         lienGithub:"https://github.com/melcd238/openclassrooms_orinico_p5",
-        url:null,
         type:"Projet de formation",
         techno : ["JS", "Html5", "css3"] 
     },
@@ -110,7 +108,6 @@ export const myWorksProjects = [
         description:"Backend et frontend d'un réseau social d'entreprise.",
         img:goupomania_small,
         lienGithub:"https://github.com/melcd238/GroupomamiaP7",
-        url:null,
         type:"Projet de formation",
         techno : ["react", "react-router", "node", "sequelize","express","mySql"]
     },
@@ -132,7 +129,7 @@ export const myWorksProjects = [
         lienGithub:"https://github.com/melcd238/library-react-modal-09082022",
         url:"https://www.npmjs.com/package/simple-modal-component-library",
         type:"Projet de formation",
-        techno : ["react"] 
+        techno : ["react", "npm"] 
     },
 
 

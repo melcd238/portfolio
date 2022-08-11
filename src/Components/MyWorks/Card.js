@@ -1,7 +1,7 @@
 import './Card.css'
 import { motion } from 'framer-motion'
 import { FaGithub } from "react-icons/fa"
-import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt ,FaNode } from "react-icons/fa";
+import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt ,FaNode, FaNpm } from "react-icons/fa";
 import { SiFramer, SiReactrouter, SiRedux , SiMysql, SiSequelize, SiExpress, SiD3Dotjs} from "react-icons/si"
 
 const Card = ({...project})=>{
@@ -32,7 +32,9 @@ const Card = ({...project})=>{
             case "sequelize":
                         return <SiSequelize key={data} style={iconStyles}/>   
             case "express":
-                        return <SiExpress key={data} style={iconStyles}/>                                                                                       
+                        return <SiExpress key={data} style={iconStyles}/> 
+            case "npm":
+                        return <FaNpm key={data} style={iconStyles}/>                                                                                                  
             default :
                 return ""    
         }
@@ -51,7 +53,7 @@ const Card = ({...project})=>{
                 <p>{description}</p>
                 <div className='card-lien'>
                     <a href={lienGithub} target="_blank" rel='noreferrer'><FaGithub style={githubStyle}/></a>
-                    <a href={url} target="_blank" rel='noreferrer'> Visiter: {title}</a>
+                    {url ?  <a href={url} target="_blank" rel='noreferrer'> Visiter: {title}</a> : ""}
                 </div>
                 <div className='card-techno'>
                  
