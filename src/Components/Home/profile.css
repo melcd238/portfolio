@@ -42,6 +42,7 @@
     width: 300px;
     height:300px;
     border-radius: 50%;
+    filter: drop-shadow(0 -6mm 4mm rgb(26, 31, 46));
     
 }
 .profil_social_media{
