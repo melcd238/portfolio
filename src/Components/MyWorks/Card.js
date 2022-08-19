@@ -43,8 +43,8 @@ const Card = ({...project})=>{
     let githubStyle = {color : "#23263b" , fontSize: "1.6em"}
    
     return(
-        <motion.div className='card-container' whileHover={{ scale: 1.04 }}
-        whileTap={{ scale: 0.96 }} id={id}>
+        <motion.div className='card-container' whileHover={{ scale: 1.02 }}
+         id={id}>
             <div className='card-img' style={{backgroundImage: `url(${img})`}}>
               <h1 className='card-title'>{title}</h1>
             </div>
