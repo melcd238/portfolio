@@ -1,5 +1,5 @@
 import "./ContactMe.css"
-import { useEffect} from 'react';
+import React , { useEffect, useRef} from 'react';
 import ScreenTitle from '../../Components/ScreenTitle/ScreenTitle'
 import ScrollService from '../../Utils/ScrollService';
 import Animations from '../../Utils/Animations';
@@ -10,12 +10,13 @@ import { BiMailSend } from "react-icons/bi";
 import BtnScroll from '../../Components/BtnScroll/BtnScroll';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
+import ReCAPTCHA  from  'react-google-recaptcha'
 
 
 
 const ContactMe =({id})=>{
-   
+    const recaptchaRef = useRef();
     
     let fadeInScreenHandler = (screen)=>{
         if(screen.fadeInScreen !== id){
@@ -31,8 +32,16 @@ const ContactMe =({id})=>{
         };
       }, [fadeInSub]);
 
-      function SendEmail(object) {
-        emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE,process.env.REACT_APP_EMAILJS_TEMPLATE , object, process.env.REACT_APP_EMAILJS_USERID)
+
+
+     const SendEmailWithReCAPTCHA = async (object) => {
+        const token = await recaptchaRef.current.executeAsync();
+        if(token ){
+            const params = {
+                ...object,
+                'g-recaptcha-response': token
+            }
+            emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE,process.env.REACT_APP_EMAILJS_TEMPLATE , params, process.env.REACT_APP_EMAILJS_USERID)
             .then((result) => {
                 console.log(result.text)
                 if(result.text){
@@ -44,6 +53,9 @@ const ContactMe =({id})=>{
                     alert("Oups!! un problème est survenu!!")
                 }
             })
+            
+        }
+       
     }
     
 
@@ -58,7 +70,7 @@ const ContactMe =({id})=>{
                          </div>
                          <div className="contact-form">
                              <div className="form-content">
-                                 <Formik initialValues={{ name: '', email: '', message:"" }}
+                                 <Formik initialValues={{ name: '', email: '', message:""}}
                                   validationSchema={yup.object({
                                     name:yup.string()
                                      .required("Nom attendu")
@@ -70,10 +82,10 @@ const ContactMe =({id})=>{
                                        .email('Doit être un email.'),
                                     message:yup.string()
                                        .required("Message attendu!") 
-                                       .min (10, "Trop court!") 
+                                       .min (10, "Trop court!"),  
                                   })}
                                   onSubmit={(values, { setSubmitting, resetForm }) => {
-                                   SendEmail(values)
+                                    SendEmailWithReCAPTCHA(values)
                                    setSubmitting(false)
                                    resetForm({
                                     values: {
@@ -97,6 +109,12 @@ const ContactMe =({id})=>{
                                  <label htmlFor="message">Message</label>
                                  <Field className="textarea"type="text" id="message" name="message" required/>
                                  <ErrorMessage name="message" component="div" style={{color: "red"}} />
+
+                                 <ReCAPTCHA sitekey={process.env.REACT_APP_EMAILJS_reCAPTCHA} 
+                                            size="invisible" 
+                                            badge="inline" 
+                                            ref={recaptchaRef} />
+                            
 
                                  <button type="submit" disabled={isSubmitting}>Envoyer <span><BiMailSend/></span></button>
                                  </Form>

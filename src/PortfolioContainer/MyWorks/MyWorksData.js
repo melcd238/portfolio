@@ -20,7 +20,6 @@ export const myWorksProjects = [
         description:"Portfolio réalisé avec React, RxJs, Framer-motion.",
         img:portfolioImg,
         lienGithub:"https://github.com/melcd238/portfolio",
-        url:"https://melcd238portfolio.netlify.app/",
         type:"Projet personnel",
         techno : ["react", "framer-motion"]
     },
