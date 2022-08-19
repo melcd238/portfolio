@@ -38,7 +38,7 @@ const Header = ()=>{
         if(index < TOTAL_SCREENS.length - 1) 
         classes += "selected-header-seperator";
 
-        if(selectedScreen === index) classes += "selected-header-option";
+        if(selectedScreen === index) classes += " selected-header-option";
         return classes;
 
     }
