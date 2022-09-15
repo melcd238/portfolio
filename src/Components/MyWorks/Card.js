@@ -1,8 +1,8 @@
 import './Card.css'
 import { motion } from 'framer-motion'
 import { FaGithub } from "react-icons/fa"
-import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt ,FaNode, FaNpm } from "react-icons/fa";
-import { SiFramer, SiReactrouter, SiRedux , SiMysql, SiSequelize, SiExpress, SiD3Dotjs} from "react-icons/si"
+import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt ,FaNode, FaNpm, FaStripe } from "react-icons/fa";
+import { SiFramer, SiReactrouter, SiRedux , SiMysql, SiSequelize, SiExpress, SiD3Dotjs, SiVercel, SiNextdotjs} from "react-icons/si"
 
 const Card = ({...project})=>{
     const { title , id, description, img , techno , lienGithub, url ,type } = project;
@@ -34,7 +34,13 @@ const Card = ({...project})=>{
             case "express":
                         return <SiExpress key={data} style={iconStyles}/> 
             case "npm":
-                        return <FaNpm key={data} style={iconStyles}/>                                                                                                  
+                        return <FaNpm key={data} style={iconStyles}/> 
+            case "stripe":
+                        return <FaStripe key={data} style={iconStyles}/>
+            case "next" :
+                        return <SiNextdotjs key={data} style={iconStyles}/>
+            case "vercel":
+                        return <SiVercel key={data} style={iconStyles}/>                                                                                                                                   
             default :
                 return ""    
         }
@@ -52,7 +58,7 @@ const Card = ({...project})=>{
                 <h2>{type}</h2>
                 <p>{description}</p>
                 <div className='card-lien'>
-                    <a href={lienGithub} target="_blank" rel='noreferrer'><FaGithub style={githubStyle}/></a>
+                 {lienGithub ? <a href={lienGithub} target="_blank" rel='noreferrer'><FaGithub style={githubStyle}/></a> : null}   
                     {url ?  <a href={url} target="_blank" rel='noreferrer'> Visiter: {title}</a> : ""}
                 </div>
                 <div className='card-techno'>

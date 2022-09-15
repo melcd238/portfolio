@@ -11,9 +11,18 @@ import orinico_small from '../../Assets/Projets/orinico_small.png';
 import goupomania_small from '../../Assets/Projets/goupomania_small.png';
 import hrnet from '../../Assets/Projets/hrnet.png';
 import npmModal from '../../Assets/Projets/npmModal.png';
-
+import WJC from '../../Assets/Projets/WJC.png'
 
 export const myWorksProjects = [
+    {   
+        id:14,
+        title: "Without judgment life coaching",
+        description:"Site réalisé pour without judgment LLC",
+        img:WJC,
+        url:"https://without-judgment-coaching.com/",
+        type:"Projet personnel",
+        techno : [ "next", "react","stripe","vercel"]
+    },
     {   
         id:1,
         title: "Portfolio",
