@@ -1,0 +1,90 @@
+.carouselT-container{
+    width:80%;
+    height:500px;
+    background-color: #ffff;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    padding:20px 30px;
+
+}
+.carouselT-btn{
+    width:10%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.carouselT-btn button{
+    border:none;
+    cursor:pointer;
+    margin:auto;
+    padding:8px;
+    border-radius:5px;
+}
+.carouselT-title{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.carouselT-title h2{
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: #1f2235;
+    font-family: "Poppins Bold";
+}
+.carouselT-title p{
+    letter-spacing: 2px;
+}
+.carouselT-title div{
+    height:2px;
+    width:80px;
+    background-color: #90028D;
+    margin-top:10px;
+}
+.carouselT-avis p{
+   font-style:italic;
+}
+.carouselT-qui p{
+    font-size:12px;
+    font-weight:200;
+}
+@media only screen and (max-width: 700px){
+    .carouselT-title h2{
+        font-size: 16px;
+    }
+    .carouselT-title p{
+        letter-spacing: 1px;
+        font-size: 13px;
+    }
+    .carouselT-title div{
+        margin-top:0px;
+    }
+    .carouselT-avis p{
+       font-style:italic;
+       font-size: 12px;
+    }
+    .carouselT-qui p{
+        font-size:10px;
+    }
+    .carouselT-container{
+        height:500px;
+        padding:10px 5px;
+
+    }
+    .carouselT-btn button{
+        padding:4px;
+    }
+
+}
+@media only screen and (max-width: 375px){
+    .carouselT-container{
+        height:580px;
+        padding: 5px;
+
+    }
+    .carouselT-btn button{
+        padding:2px;
+    }
+}

@@ -1,0 +1,17 @@
+.testimonials-container{
+    display:flex;
+    align-ietms:center;
+    justify-content:center;
+    margin-top:80px;
+}
+
+.testi-container{
+    width: 100%;
+    box-shadow: 0 0px 20px -2px #1f2235;
+    border-radius:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #23263b;
+    padding:10px 0px;
+}

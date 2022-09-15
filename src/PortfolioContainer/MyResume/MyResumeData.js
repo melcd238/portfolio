@@ -8,7 +8,7 @@ export const resumeBullets = [
 
 export  const programmingSkillsDetails = [
     { skill: "JavaScript"},
-    { skill: "React.js"},
+    { skill: "React.js - Next.js"},
     { skill: "Redux - Redux Toolkit"},
     { skill: "Express.js" },
     { skill: "Node.js"},
@@ -33,7 +33,7 @@ export  const programmingSkillsDetails = [
           skill : "Adore apprendre"
       },
       {
-          skill : "Ne lâche jamais rien"
+          skill : "Déterminée"
       },
       {
         skill : "Loyale"
