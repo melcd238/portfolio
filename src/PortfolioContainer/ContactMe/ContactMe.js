@@ -134,7 +134,7 @@ const ContactMe =({id})=>{
                </div>
                <p className="copyRights">©2022 - Réalisé par Mélaïna Donati - Tous droits réservés. </p>
                <div className="footer-social">
-                    <a href="https://www.linkedin.com/in/mel-donati-1aa4081b0/" target="_blank" rel="noreferrer"><FaLinkedinIn style={{color:"white", fontSize:"30px"}}/></a>
+                    <a href="https://www.linkedin.com/in/mela%C3%AFna-donati-1aa4081b0/" target="_blank" rel="noreferrer"><FaLinkedinIn style={{color:"white", fontSize:"30px"}}/></a>
                     <a href="https://github.com/melcd238" target="_blank" rel="noreferrer"><FaGithub style={{color:"white", fontSize:"30px"}}/></a>
                </div>
              </footer>
