@@ -1,12 +1,20 @@
 .btn-scroll{
     outline: none;
     color: rgb(230, 227, 227);
-    border-radius: 19px;
     background-color: #23263b;
-    font-size: 18px;
-    width: 80px;
-    padding: 10px;
+    position: fixed;
+    bottom:280px;
+    right:10px;
     border:none;
+    color:white;
+    border-radius:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:30px;
+    width:40px;
+    cursor:pointer;
+    
 }
 .btn-scroll:hover{
     background-color:  #90028D;

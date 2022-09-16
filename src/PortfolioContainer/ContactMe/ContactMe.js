@@ -7,11 +7,11 @@ import logo from '../../Assets/logoP.png';
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import email from "../../Assets/pexelEmail.jpg"
 import { BiMailSend } from "react-icons/bi";
-import BtnScroll from '../../Components/BtnScroll/BtnScroll';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import emailjs from 'emailjs-com';
-import ReCAPTCHA  from  'react-google-recaptcha'
+import ReCAPTCHA  from  'react-google-recaptcha';
+import BtnScroll from "../../Components/BtnScroll/BtnScroll";
 
 
 
@@ -127,9 +127,6 @@ const ContactMe =({id})=>{
                    
                      
              </div>
-             <div className="btn-contact-footer-scroll">
-                <BtnScroll/>
-             </div>
              <footer className="footer-container">
                <div className="imgContainer">
                   <img src={logo} alt="Logo de Mélaïna Donati"></img> 
@@ -141,6 +138,7 @@ const ContactMe =({id})=>{
                </div>
                
              </footer>
+             <BtnScroll/>
         </div>
     )
 }

@@ -5,7 +5,7 @@ import ScrollService from '../../Utils/ScrollService';
 import Animations from '../../Utils/Animations';
 import MyResumeHeading from '../../Components/MyResumeHeading/MyResumeHeading'
 import { resumeBullets , programmingSkillsDetails, mySoftSkills } from './MyResumeData'
-import BtnScroll from '../../Components/BtnScroll/BtnScroll'
+
 
 
 
@@ -202,7 +202,6 @@ const MyResume = ({id})=>{
           <div className="resume-bullet-details">{getResumeScreens()}</div>
         </div>
             </div>
-           <BtnScroll/>
         </div>
     )
 }
