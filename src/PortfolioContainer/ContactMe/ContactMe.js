@@ -11,7 +11,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA  from  'react-google-recaptcha';
-import BtnScroll from "../../Components/BtnScroll/BtnScroll";
+
 
 
 
@@ -128,6 +128,7 @@ const ContactMe =({id})=>{
                      
              </div>
              <footer className="footer-container">
+             
                <div className="imgContainer">
                   <img src={logo} alt="Logo de Mélaïna Donati"></img> 
                </div>
@@ -136,9 +137,8 @@ const ContactMe =({id})=>{
                     <a href="https://www.linkedin.com/in/mel-donati-1aa4081b0/" target="_blank" rel="noreferrer"><FaLinkedinIn style={{color:"white", fontSize:"30px"}}/></a>
                     <a href="https://github.com/melcd238" target="_blank" rel="noreferrer"><FaGithub style={{color:"white", fontSize:"30px"}}/></a>
                </div>
-               
              </footer>
-             <BtnScroll/>
+            
         </div>
     )
 }
