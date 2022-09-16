@@ -27,7 +27,7 @@ const Testimonials = ({id})=> {
   return (
     <div className="testimonials-container screen-container fade-in" id={id || ""}>
         <div className="about-me-parent">
-        <ScreenTitle title="Testimonials" subtitle="Avis et recommandations"/>
+        <ScreenTitle title="Témoignages" subtitle="Avis et recommandations"/>
         <div className='testi-container'>
               <CarouselT data={testimonialsData}/>
         </div>

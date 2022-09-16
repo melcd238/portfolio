@@ -27,7 +27,7 @@ const AboutMe= ({id})=>{
     return(
         <div className="about-me-container screen-container fade-in" id={id || ""}>
             <div className="about-me-parent">
-                <ScreenTitle title="About Me" subtitle="Pourquoi me choisir?"/>
+                <ScreenTitle title="A mon sujet" subtitle="Pourquoi me choisir?"/>
                 <div className="about-me-card">
                    <div className="about-me-profile">
                        <img src={AboutIMG} alt="about me"></img>

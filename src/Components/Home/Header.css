@@ -40,7 +40,7 @@ header{
   .selected-header-option {
     color: #90028D;
   }
-@media screen and (max-width: 970px){
+@media screen and (max-width: 1370px){
     header{
         margin-top:20px;
         margin-bottom: 40px;

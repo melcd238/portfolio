@@ -190,7 +190,7 @@ const MyResume = ({id})=>{
     return(
         <div className="resume-container screen-container fade-in" id={id || ""}>
             <div className="resume-content">
-              <ScreenTitle title="Resume" subtitle="Quelques détails" />
+              <ScreenTitle title="Mon CV" subtitle="Quelques détails" />
               <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">

@@ -9,28 +9,28 @@ import Testimonials from '../PortfolioContainer/Testimonials/Testimonials';
 
 export const TOTAL_SCREENS =[
     {
-        screen_name: "Home",
+        screen_name: "Accueil",
         component: Home,
     },
     {
-        screen_name: "AboutMe",
+        screen_name: "A-Propos",
         component: AboutMe,
     },
     {
-        screen_name: "MyResume",
+        screen_name: "Mon-CV",
         component: MyResume,
     },
     {
-        screen_name: "MyWorks",
+        screen_name: "Mon-Travail",
         component: MyWorks,
     },
     {   
-        screen_name: "Testimonials",
+        screen_name: "Recommandations",
         component: Testimonials,
 
     },
     {
-        screen_name: "ContactMe",
+        screen_name: "Me-contacter",
         component: ContactMe,
     }
 
