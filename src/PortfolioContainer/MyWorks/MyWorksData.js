@@ -56,7 +56,7 @@ export const myWorksProjects = [
     },
     {   
         id:3,
-        title: "Cocktail",
+        title: "Cocktails",
         description:"Application de recherche de recettes de cocktails utilisant une API externe et contextAPI.",
         img:cocktailImg,
         lienGithub:"https://github.com/melcd238/cocktails",
