@@ -62,7 +62,7 @@ const ContactMe =({id})=>{
     return(
         <div className="contact-container fade-in" id={id}>
              <ScreenTitle title="Me contacter" subtitle="Restons en contact !!"/>
-             <div className="contact-content">
+             <div className="contact-content" id="ContactMe">
                      <div className="contact-form-container">
                          <div className="contact-mail"> 
                              <img src={email} alt="Pexel email"></img>
