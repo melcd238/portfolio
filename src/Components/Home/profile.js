@@ -1,14 +1,25 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import TypeAnimation from 'react-type-animation';
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import ScrollService from '../../Utils/ScrollService';
 import melPicture from "../../Assets/avatar.png"
 import "./profile.css";
+import {quotes}  from './data/citations'
 
 
 
 
 const Profil = ()=>{
+    const [index, setIndex] = useState(null);
+    const generate = () => { const index = Math.floor(Math.random() * quotes.length);
+         setIndex(index);
+         
+     }; 
+
+   useEffect(()=>{
+     generate()
+   },[])
+
     return(
         <>
         <div className="profil_container">
@@ -23,7 +34,7 @@ const Profil = ()=>{
                 </div>
                 
                 <div className='profil-desc'>
-                  <p>Amoureuse de React.js et de son ecosystème...</p>
+                  <p>Amoureuse de React.js et de son écosystème...</p>
                 </div>
 
                 <div className='profil_btn'>
@@ -48,9 +59,18 @@ const Profil = ()=>{
                
             </div>
         </div>
-        <q>Oser ouvrir une porte demande parfois du courage. La franchir et continuer son chemin demande de la résilience.</q> 
+         { index !== null ? 
+          <div className="citation_container">
+          <q>  {quotes[index] && quotes[index].citation}</q> 
+           <p>  {quotes[index] && quotes[index].auteur}</p>
+          </div> 
+          :
+          null
+
+         }
         </>
     )
 }
 
 export default Profil
+

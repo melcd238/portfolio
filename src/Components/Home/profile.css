@@ -86,10 +86,23 @@
       gap:10px;
 
   }
+  .citation_container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap:10px;
+    margin:20px;
+ }
+ .citation_container p{
+    color:white;
+      font-size:16px;
+      letter-spacing: 1px;
+      font-style:italic;
+}
   q{
       font-style:italic;
       color:white;
-      margin:auto;
       font-size:18px;
       letter-spacing: 1px;
       
@@ -150,8 +163,14 @@
         margin-top: 20px;
     }
     q{
-        font-size:12px;
-        margin:20px;  
+        font-size:12px; 
+    }
+    .citation_container{
+        gap:5px;
+     }
+     .citation_container p{
+    
+          font-size:12px;
     }
    
    
@@ -169,6 +188,11 @@
     q{
         font-size:10px;  
     }
+    .citation_container p{
+    
+        font-size:10px;
+  }
+ 
 
   }
   @media screen and (max-width: 320px){
