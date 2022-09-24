@@ -2,7 +2,7 @@ import './Card.css'
 import { motion } from 'framer-motion'
 import { FaGithub } from "react-icons/fa"
 import { FaReact, FaJsSquare, FaHtml5, FaCss3Alt ,FaNode, FaNpm, FaStripe } from "react-icons/fa";
-import { SiFramer, SiReactrouter, SiRedux , SiMysql, SiSequelize, SiExpress, SiD3Dotjs, SiVercel, SiNextdotjs} from "react-icons/si"
+import { SiFramer, SiReactrouter, SiRedux , SiMysql, SiSequelize, SiExpress, SiD3Dotjs, SiVercel, SiNextdotjs, SiGooglemaps} from "react-icons/si"
 
 const Card = ({...project})=>{
     const { title , id, description, img , techno , lienGithub, url ,type } = project;
@@ -40,7 +40,9 @@ const Card = ({...project})=>{
             case "next" :
                         return <SiNextdotjs key={data} style={iconStyles}/>
             case "vercel":
-                        return <SiVercel key={data} style={iconStyles}/>                                                                                                                                   
+                        return <SiVercel key={data} style={iconStyles}/> 
+            case "maps":
+                        return <SiGooglemaps key={data} style={iconStyles}/>                                                                                                                                                
             default :
                 return ""    
         }
@@ -52,9 +54,9 @@ const Card = ({...project})=>{
         <motion.div className='card-container' whileHover={{ scale: 1.02 }}
          id={id}>
             <div className='card-img' style={{backgroundImage: `url(${img})`}}>
-              <h1 className='card-title'>{title}</h1>
             </div>
             <div className='card-desc'>
+              <h1 className='card-title'>{title}</h1>
                 <h2>{type}</h2>
                 <p>{description}</p>
                 <div className='card-lien'>

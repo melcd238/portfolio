@@ -11,9 +11,21 @@ import orinico_small from '../../Assets/Projets/orinico_small.png';
 import goupomania_small from '../../Assets/Projets/goupomania_small.png';
 import hrnet from '../../Assets/Projets/hrnet.png';
 import npmModal from '../../Assets/Projets/npmModal.png';
-import WJC from '../../Assets/Projets/WJC.png'
+import WJC from '../../Assets/Projets/WJC.png';
+import TTD from '../../Assets/Projets/TTD.png';
 
 export const myWorksProjects = [
+    {
+        id:15,
+        title: "Trouve ton dentiste",
+        description:"Site de recherche d'un dentiste par région, département et commune, maximun 10 dentistes sont affichés pour cette démo.",
+        img:TTD,
+        lienGithub:"https://github.com/melcd238/Trouve-ton-dentiste",
+        url:"https://trouve-ton-dentiste.vercel.app/",
+        type:"Projet personnel",
+        techno : ["react", "maps"]
+
+    },
     {   
         id:14,
         title: "Without judgment life coaching",
@@ -55,7 +67,7 @@ export const myWorksProjects = [
     {   
         id:4,
         title: "FishEye",
-        description:"Site de photographes réalisé en utilisant la POO et le Factory Pattern.",
+        description:"Site de photographes réalisé en utilisant la POO et le Factory Pattern.(pas encore responsive)",
         img:fisheye_small,
         lienGithub:"https://github.com/melcd238/melainadonati_6_22092021",
         url:"https://melcd238fisheye.netlify.app/",
@@ -65,7 +77,7 @@ export const myWorksProjects = [
     {   
         id:5,
         title: "Les petits plats",
-        description:"Algorithme de recherche de recettes de cuisine.",
+        description:"Algorithme de recherche de recettes de cuisine.(pas encore responsive)",
         img:petitsPlats_small,
         lienGithub:"https://github.com/melcd238/Les_petits_plats_DonatiMelaina_29112021",
         url:"https://melcd238lespetitsplats.netlify.app/",
@@ -85,7 +97,7 @@ export const myWorksProjects = [
     {   
         id:7,
         title: "SportSee",
-        description:"Page profil d'un utilisateur d'une application de coaching sportif réalisé avec D3.js.(non responsive).",
+        description:"Page profil d'un utilisateur d'une application de coaching sportif réalisé avec D3.js.(pas encore responsive).",
         img:sportsee_small,
         lienGithub:"https://github.com/melcd238/DonatiMelaina_P12_06052022",
         url:"https://melcd238sportsee.netlify.app/",
