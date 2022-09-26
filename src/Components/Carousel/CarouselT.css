@@ -1,6 +1,6 @@
 .carouselT-container{
     width:80%;
-    height:600px;
+    height:640px;
     background-color: #ffff;
     display:flex;
     flex-direction:column;
@@ -69,7 +69,6 @@
         font-size:10px;
     }
     .carouselT-container{
-        height:500px;
         padding:10px 5px;
 
     }
@@ -80,7 +79,6 @@
 }
 @media only screen and (max-width: 375px){
     .carouselT-container{
-        height:580px;
         padding: 5px;
 
     }
