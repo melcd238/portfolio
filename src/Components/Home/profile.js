@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-import TypeAnimation from 'react-type-animation';
+import { TypeAnimation } from 'react-type-animation';
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import ScrollService from '../../Utils/ScrollService';
 import melPicture from "../../Assets/avatar.png"
@@ -28,8 +28,9 @@ const Profil = ()=>{
                <div className='profil_animation'>
                 <TypeAnimation
                      cursor={false}
-                     sequence={["Développeuse d'application React.js", 2000, "Déterminée et ultra motivée 😄",2000]}
+                     sequence={["Je suis développeuse React.js",3000, "Je suis motivée et déterminée",2000]}
                      wrapper="h2"
+                     speed={10}
                      repeat={Infinity}/>
                 </div>
                 
