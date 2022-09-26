@@ -7,11 +7,12 @@
 
 .testi-container{
     width: 100%;
+    min-height: 600px;
     box-shadow: 0 0px 20px -2px #1f2235;
     border-radius:5px;
     display:flex;
     justify-content:center;
     align-items:center;
     background-color: #23263b;
-    padding:20px 0px;
+    padding:10px 0px;
 }
