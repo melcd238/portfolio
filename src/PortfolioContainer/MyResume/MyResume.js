@@ -129,7 +129,7 @@ const MyResume = ({id})=>{
           />
           <MyResumeHeading
             heading="Montagne"
-            description="Que ce soit pour la raondonnée ou pour le sport d'hivers, c'est une vrai bouffée d'oxygène."
+            description="Que ce soit pour la randonnée ou pour le sport d'hivers, c'est une vrai bouffée d'oxygène."
           />
           <MyResumeHeading
             heading="Voyages"
