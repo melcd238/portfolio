@@ -76,7 +76,7 @@ header{
         background-color: #1f2235;
         z-index: 1000;
         opacity: 0.3;
-        border-top-right-radius:200px;
+        border-top-right-radius:340px;
       }
       .header-option-seperator {
         margin: 0;
