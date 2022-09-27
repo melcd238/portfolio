@@ -28,7 +28,7 @@ const Profil = ()=>{
                <div className='profil_animation'>
                 <TypeAnimation
                      cursor={false}
-                     sequence={["Je suis développeuse React.js",3000, "Je suis motivée et déterminée",2000]}
+                     sequence={["Développeuse React.js 💻",3000, "Déterminée et motivée 😀",2000]}
                      wrapper="h2"
                      speed={10}
                      repeat={Infinity}/>

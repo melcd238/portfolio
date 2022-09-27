@@ -1,11 +1,14 @@
 header{
-    margin-top:60px;
-    margin-bottom: 60px;
+    position:fixed;
+    width:100%;
+    top:0px;
+    background-color: #1f2235;
+    z-index:100;
 }
 .header-container{
     display: flex;
     justify-content:center;
-    height:140px;
+    height:100px;
     color:white;
 }
 .header-parent{
@@ -40,7 +43,7 @@ header{
   .selected-header-option {
     color: #90028D;
   }
-@media screen and (max-width: 1370px){
+@media screen and (max-width: 1380px){
     header{
         margin-top:20px;
         margin-bottom: 40px;

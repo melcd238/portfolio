@@ -43,7 +43,7 @@ function Carousel({data}) {
   return index === data.indexOf(currentData) ? dotStyle : dotStyleActive
 }
   return(
-   [...Array(2).keys()].map((index)=>{
+   [...Array(3).keys()].map((index)=>{
        const dotStyles = checkIndex(index)
        return(
            <BsDot key={index} style={dotStyles} />
