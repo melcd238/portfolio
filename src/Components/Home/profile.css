@@ -6,6 +6,7 @@
     width: 70%;
     margin:auto;
     flex: 1;
+    padding-top: 120px;
 }
 .profil_resume{
     display: flex;
