@@ -44,10 +44,11 @@ header{
     color: #90028D;
   }
 @media screen and (max-width: 1380px){
-    header{
-        margin-top:20px;
-        margin-bottom: 40px;
-    }
+  .header-container{
+    align-items:center;
+    height:80px;
+   
+}
     .header-parent{
       
         width:80%;
@@ -94,6 +95,6 @@ header{
         opacity: 1;
       }
       .header-logo img{
-        width: 140px;
+        width: 100px;
        }
 }
