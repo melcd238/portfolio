@@ -11,8 +11,8 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA  from  'react-google-recaptcha';
-import  {  ToastContainer , toast  }  from  'react-toastify' ;
-import  'react-toastify/dist/ReactToastify.css' ;
+import  {  toast  }  from  'react-toastify' ;
+
 
 
 
@@ -47,7 +47,6 @@ const ContactMe =({id})=>{
             .then((result) => {
                 console.log(result.text)
                 if(result.text){
-                   <ToastContainer/>
                        toast.success('Votre message a été envoyé avec succés!! 👏', {
                          position: "top-center",
                          autoClose: 2000,
@@ -57,12 +56,12 @@ const ContactMe =({id})=>{
                         draggable: true,
                          progress: undefined,
                        });
+                      
                   
                 }
             }, (error) => {
                 console.log(error.text)
                 if(error.text){
-                    <ToastContainer/>
                     toast.error("Whoops!!Votre message n'a pas pu être envoyé!!🙁 ", {
                         position: "top-center",
                         autoClose: 2000,
@@ -72,6 +71,7 @@ const ContactMe =({id})=>{
                         draggable: true,
                         progress: undefined,
                         });
+                        
                 }
             })
             

@@ -1,4 +1,6 @@
 import { TOTAL_SCREENS } from "../Utils/Tools";
+import  {  ToastContainer  }  from  'react-toastify' ;
+import  'react-toastify/dist/ReactToastify.css' ;
 
 
 
@@ -13,7 +15,9 @@ const PortfolioConatiner = ()=>{
         )
     };
 
-    return <div> {mapAllScreens()}</div>
+    return <div> {mapAllScreens()}
+                <ToastContainer />
+          </div>
 
 }
 
