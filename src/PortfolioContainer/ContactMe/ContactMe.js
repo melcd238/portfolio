@@ -49,7 +49,7 @@ const ContactMe =({id})=>{
                 if(result.text){
                        toast.success('Votre message a été envoyé avec succés!! 👏', {
                          position: "top-center",
-                         autoClose: 2000,
+                         autoClose: 4000,
                          hideProgressBar: false,
                          closeOnClick: true,
                          pauseOnHover: false,
@@ -64,7 +64,7 @@ const ContactMe =({id})=>{
                 if(error.text){
                     toast.error("Whoops!!Votre message n'a pas pu être envoyé!!🙁 ", {
                         position: "top-center",
-                        autoClose: 2000,
+                        autoClose: 4000,
                         hideProgressBar: false,
                         closeOnClick: true,
                         pauseOnHover: false,
