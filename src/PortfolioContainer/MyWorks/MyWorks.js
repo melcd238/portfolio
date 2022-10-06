@@ -28,12 +28,13 @@ const MyWorks = ({id})=>{
 
 
     return(
-        <div id={id || ""} className="my-works-container fade-in">
+        <div className="my-works-container fade-in"  id={id}>
+             <div className="work-content">
             <ScreenTitle title="Mon travail" subtitle="Quelques projets personnels et projets de formation"/>
             <motion.div className='carousel-container'>
                 <Carousel/>
             </motion.div>
-            
+            </div>  
         </div>
 
     )

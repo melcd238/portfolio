@@ -25,7 +25,7 @@ const Testimonials = ({id})=> {
 
 
   return (
-    <div className="testimonials-container screen-container fade-in" id={id || ""}>
+    <div className="testimonials-container screen-container fade-in" id={id}>
         <div className="about-me-parent">
         <ScreenTitle title="Témoignages" subtitle="Avis et recommandations"/>
         <div className='testi-container'>

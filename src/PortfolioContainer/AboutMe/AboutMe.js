@@ -26,7 +26,8 @@ const AboutMe= ({id})=>{
       }, [fadeInSub]);
 
     return(
-        <div className="about-me-container screen-container fade-in" id={id || ""}>
+        <>
+        <div className="about-me-container"  id={id}>
             <div className="about-me-parent">
                 <ScreenTitle title="A mon sujet" subtitle="Pourquoi me choisir?"/>
                 <div className="about-me-card">
@@ -61,6 +62,7 @@ const AboutMe= ({id})=>{
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

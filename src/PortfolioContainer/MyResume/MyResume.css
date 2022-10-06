@@ -4,8 +4,8 @@
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    margin: 0;
   }
+
   .experience-container{
     display: flex;
     flex-direction: column;

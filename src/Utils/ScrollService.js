@@ -44,12 +44,12 @@ export default class ScrollService{
     }
 
     checkCurrentScreenUnderViewport = (event)=>{
+        
         if(!event || Object.keys(event).length < 1)return;
         for(let screen of TOTAL_SCREENS){
             let screenFromDom = document.getElementById(screen.screen_name);
             if(!screenFromDom)
             continue;
-
             let fullyVisible = this.isEltInView(screenFromDom , "total");
             let partiallyVisible = this.isEltInView(screenFromDom, "partial");
 
@@ -65,6 +65,7 @@ export default class ScrollService{
                     ScrollService.currentScreenBroadCaster.next({
                         screenInView : screen.screen_name
                     });
+                    
                     break;
                 }
             }
