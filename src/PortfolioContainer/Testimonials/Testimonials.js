@@ -7,7 +7,7 @@ import { testimonialsData } from './TestimonialsData';
 import CarouselT from '../../Components/Carousel/CarouselT';
 
 const Testimonials = ({id})=> {
-
+      console.log(id)
     let fadeInScreenHandler = (screen)=>{
         if(screen.fadeInScreen !== id){
             return Animations.animations.fadeInScreen(id)

@@ -15,6 +15,7 @@ const Header = ()=>{
     const updateCurrentscreen = (currentScreen)=>{
         if(!currentScreen || !currentScreen.screenInView) return;
         let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView)
+        setSelectedScreen(screenIndex)
         if(screenIndex < 0)return
     }
 

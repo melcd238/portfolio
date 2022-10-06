@@ -10,6 +10,7 @@ import AboutIMG from '../../Assets/aboutMe.jpg';
 
 
 const AboutMe= ({id})=>{
+    console.log(id)
     let fadeInScreenHandler = (screen)=>{
         if(screen.fadeInScreen !== id){
             return Animations.animations.fadeInScreen(id)
