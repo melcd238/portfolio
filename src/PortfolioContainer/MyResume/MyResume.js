@@ -32,17 +32,17 @@ const MyResume = ({id})=>{
       const resumeDetails = [
         <div className="resume-screen-container fade-in" key="education">
           <MyResumeHeading
-            heading={"OpenClassRooms"}
-            subHeading={"RNCP niveau 6 Développeuse d'application - JavaScript React.JS"}
-            fromDate={"2021"}
-            toDate={"2022"}
+            heading={"The Arena Project"}
+            subHeading={"Un parcours organisé sous forme de challenges (Shell, data structures, algorithms,file system etc.)"}
+            fromDate={"2022"}
+            toDate={"2023"}
           />
     
           <MyResumeHeading
             heading={"OpenClassRooms"}
-            subHeading={"RNCP niveau 5 Développeuse Web"}
-            fromDate={"2020"}
-            toDate={"2021"}
+            subHeading={"RNCP niveau 6 Développeuse d'application - JavaScript React.JS"}
+            fromDate={"2021"}
+            toDate={"2022"}
           />
           <MyResumeHeading
             heading={"Université d'Odontologie Bordeaux 2"}
