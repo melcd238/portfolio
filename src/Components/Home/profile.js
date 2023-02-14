@@ -46,7 +46,7 @@ const Profil = ()=>{
                 </div> 
 
                 <div className='profil_social_media'>
-                    <a href="https://www.linkedin.com/in/mela%C3%AFna-donati-1aa4081b0/" target="_blank" rel="noreferrer"><FaLinkedinIn style={{color:"white", fontSize:"30px"}}/></a>
+                    <a href="https://www.linkedin.com/in/MelainaDonati/" target="_blank" rel="noreferrer"><FaLinkedinIn style={{color:"white", fontSize:"30px"}}/></a>
                     <a href="https://github.com/melcd238" target="_blank" rel="noreferrer"><FaGithub style={{color:"white", fontSize:"30px"}}/></a>
                 </div>   
 
